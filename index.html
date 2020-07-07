@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>US Quiz</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="img/RPSLogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            RPS
+        </a>
+    </nav>
+
+    <div class="jumbotron">
+        <h1> Welcome to Rock, Paper and Scissor!</h1>
+        <hr>
+        <p>Please enter your name to get started.</p>
+        <div class="input-group mb-3" id="inputName">
+            <input id="inputPlayerName" type="text" class="form-control" placeholder="Player's Name"
+                aria-label="Player's Name" aria-describedby="btnPlayerName">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="btnPlayerName">Enter</button>
+            </div>
+        </div>
+        <h4 id="txtPlayerName"></h4>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-auto">
+                <img src="img/paper.png" alt="paper" class="img-thumbnail rpsImages" id="paper">
+                <img src="img/rock.png" alt="rock" class="img-thumbnail rpsImages" id="rock">
+                <img src="img/scissors.png" alt="scissors" class="img-thumbnail rpsImages" id="scissors">
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div id="divWinner" class="col-md-auto"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-md-auto">
+                <img src="img/paper.png" alt="paper2" class="img-thumbnail rpsImages2" id="paper2">
+                <img src="img/rock.png" alt="rock2" class="img-thumbnail rpsImages2" id="rock2">
+                <img src="img/scissors.png" alt="scissors2" class="img-thumbnail rpsImages2" id="scissors2"></div>
+            <div class="col"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col"></div>
+            <div id="divWinner" class="col-md-auto">
+                <button id="btnReset" type="button" class="btn btn-primary" onClick="window.location.reload();">Reset
+                    Game</button>
+            </div>
+            <div class="col"></div>
+
+        </div>
+
+</body>
+
+</html>

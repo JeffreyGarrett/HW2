@@ -1,0 +1,13 @@
+.rpsImages {
+    display:none;
+    height: 200px;
+}
+
+.rpsImages2 {
+    display:none;
+    height: 200px;
+}
+
+#btnReset {
+    text-align: center;
+}
